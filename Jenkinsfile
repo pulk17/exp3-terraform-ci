@@ -13,7 +13,7 @@ pipeline {
     AWS_DEFAULT_REGION    = 'ap-south-1'
     TF_IN_AUTOMATION      = 'true'
     IAC_TOOLS             = 'C:\\ProgramData\\Jenkins\\.jenkins\\tools\\iac'
-    PATH                  = "C:\\ProgramData\\Jenkins\\.jenkins\\tools\\iac;${PATH}"
+    PATH                  = "C:\\ProgramData\\Jenkins\\.jenkins\\tools\\iac;C:\\Program Files\\Git\\usr\\bin;${PATH}"
   }
 
   triggers {
