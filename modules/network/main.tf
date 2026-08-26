@@ -18,7 +18,7 @@ resource "aws_internet_gateway" "main" {
 
 resource "aws_subnet" "public" {
   vpc_id                  = aws_vpc.main.id
-      cidr_block=var.public_subnet_cidr
+  cidr_block              = var.public_subnet_cidr
   map_public_ip_on_launch = false
 
   tags = {
@@ -76,7 +76,7 @@ resource "aws_security_group" "app" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = [var.admin_cidr]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
