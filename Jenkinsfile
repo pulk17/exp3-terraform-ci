@@ -33,6 +33,7 @@ pipeline {
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
           $dir = $env:IAC_TOOLS
           New-Item -ItemType Directory -Force -Path $dir | Out-Null
+          New-Item -ItemType Directory -Force -Path "C:\\ProgramData\\Jenkins\\.jenkins\\tf-state" | Out-Null
 
           if (-not (Test-Path "$dir\\terraform.exe")) {
             Write-Host "Installing Terraform 1.9.5"
