@@ -12,7 +12,7 @@ pipeline {
     AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
     AWS_DEFAULT_REGION    = 'ap-south-1'
     TF_IN_AUTOMATION      = 'true'
-    OPERATOR              = 'Pulkit Chauhan | SAP 500121424 | Roll R2142230354 | UPES Dehradun'
+    OPERATOR              = 'Pulkit Chauhan - SAP 500121424 - Roll R2142230354 - UPES Dehradun'
     IAC_TOOLS             = 'C:\\ProgramData\\Jenkins\\.jenkins\\tools\\iac'
     PATH                  = "C:\\ProgramData\\Jenkins\\.jenkins\\tools\\iac;C:\\Program Files\\Git\\usr\\bin;${PATH}"
   }
